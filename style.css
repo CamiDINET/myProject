@@ -1,0 +1,33 @@
+* :not(h1){
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Parisienne', cursive;
+}
+.logo {
+    width: 138px;
+    height: 138px;
+}
+header{
+   background-image: url(./Assets/ileMauricePrincipale10.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 40vw;
+}
+.logoAndTitle{
+    display: flex;
+}
+ul {
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #9BD0E7;
+    float: right;
+}
+
