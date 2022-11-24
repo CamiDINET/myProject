@@ -1,6 +1,9 @@
 * :not(h1){
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    color: black;
 }
 h1 {
     font-family: 'Parisienne', cursive;
@@ -18,8 +21,10 @@ header{
 }
 .logoAndTitle{
     display: flex;
+    align-items: center;
 }
 ul {
+    margin-top: 0;
     width: 50%;
     height: 5vh;
     display: flex;
@@ -28,6 +33,58 @@ ul {
     font-weight: bold;
     font-size: larger;
     background-color: #9BD0E7;
-    float: right;
+    align-self: flex-end;
+    position: fixed;
+    right: 0; 
 }
+a:hover{
+   color: white;
+}
+h2{
+    margin-left: 10%;
+    font-size: xx-large;
+}
+.pictureMauriceHome{
+width: 499;
+height:516;
+}
+.paragraphAndPicture{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.pictureAndParagraph{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    width: 40%;
+}
+.titleLeft{
+    margin-left: 10%;
+    font-size: x-large;
+    margin-top: 5%;
+}
+.titleRight{
+    text-align: right;
+    margin-right: 25%;
+    font-size: x-large;
+    margin-top: 5%;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.titleAndParagraphAndPicture{
+    display: flex;
 
+
+}
+.titleAndParagraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
