@@ -39,10 +39,17 @@ ul {
 }
 a:hover{
    color: white;
+   
 }
 h2{
-    margin-left: 10%;
     font-size: xx-large;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+}
+
+h3{
+    font-size: xx-large;
+    margin-bottom: 5%;
 }
 .pictureMauriceHome{
 width: 499;
@@ -53,38 +60,47 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
-.pictureAndParagraph{
+/* .pictureAndParagraph{ 
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+}*/
+  p{ 
+    width: 35vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
-p{
-    width: 40%;
-}
-.titleLeft{
+
+/* .titleLeft{ 
     margin-left: 10%;
     font-size: x-large;
     margin-top: 5%;
-}
-.titleRight{
+}*/
+/* .titleRight{ 
     text-align: right;
     margin-right: 25%;
     font-size: x-large;
     margin-top: 5%;
-}
+}*/
 .map{
     display: flex;
     justify-content: center;
 }
 .titleAndParagraphAndPicture{
     display: flex;
-
-
+    justify-content: space-around;
+    margin: 15vh 0;
 }
 .titleAndParagraph{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.pictureAndTitleAndParagraph{
+    display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 15vh 0;
 }
