@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab421176df.js" crossorigin="anonymous"></script>
     <title>Découvrir l'ile Maurice</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="histoire.html">Histoire</a></li>
-                <li><a href="lieuxAVisiter.html">Lieux à visiter</a></li>
-                <li><a href="lesPlages.html">Les plages</a></li>
-                <li><a href="carte.html">Carte</a></li>
-            </ul>
-        </nav>
         <div class="logoAndTitle">
             <img class="logo" src="./Assets/Logo Dodo.png" alt="Logo d'un dodo">
             <h1>Découvrir l'ile Maurice</h1>
         </div>
+
+        <nav class="navBarDesktop"> 
+                <a href="index.html">Accueil</a>
+                <a href="histoire.html">Histoire</a>
+                <a href="lieuxAVisiter.html">Lieux à visiter</a>
+                <a href="lesPlages.html">Les plages</a>
+                <a href="carte.html">Carte</a>
+        </nav>
+        
+        <nav class="navBarMobile">
+            <i class="fa-solid fa-bars"></i>
+             <div class="navListMobile">
+                <a href="index.html">Accueil</a>
+                <a href="histoire.html">Histoire</a>
+                <a href="lieuxAVisiter.html">Lieux à visiter</a>
+                <a href="lesPlages.html">Les plages</a>
+                <a href="carte.html">Carte</a>
+            </div>
+        </nav>
+        
     </header>
     <h2>Lieux à visiter</h2>
 
@@ -172,6 +184,7 @@
 
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

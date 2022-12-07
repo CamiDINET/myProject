@@ -8,12 +8,12 @@
 
 h1 {
     font-family: 'Parisienne', cursive;
-    font-size: 36pt;
+     font-size: 4vw;     /*36pt; */
 }
 
 .logo {
-    width: 138px;
-    height: 138px;
+    width: 15vw;
+    height: 15vw;
 }
 
 header {
@@ -29,8 +29,8 @@ header {
     align-items: center;
 }
 
-ul {
-    margin-top: 0;
+.navBarDesktop {
+    margin-top: -15vw;
     width: 50%;
     height: 5vh;
     display: flex;
@@ -43,13 +43,16 @@ ul {
     position: fixed;
     right: 0;
 }
-
-a:hover {
-    color: white;
+.navBarMobile{
+    display:none;
 }
 
+ a:hover { 
+     color: white; 
+ } 
+
 h2 {
-    font-size: xx-large;
+     font-size: 4vw; /*xx-large; */
     margin-bottom: 10vh;
     margin-left: 10vw;
 }
@@ -57,11 +60,6 @@ h2 {
 h3 {
     font-size: xx-large;
     margin-bottom: 5%;
-}
-
-.pictureMauriceHome {
-    width: 499;
-    height: 516;
 }
 
 .paragraphAndPicture {
@@ -74,6 +72,7 @@ p {
     width: 35vw;
     margin-left: 10vw;
     margin-right: 10vw;
+    font-size: 2vw;
 }
 
 .map {
@@ -101,52 +100,12 @@ p {
     margin: 15vh 0;
 }
 
-@media screen and (max-width: 576px) {
-    .titleAndParagraphAndPicture {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 15vh 0;
-    }
-
-    .pictureAndTitleAndParagraph {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column-reverse;
-        margin: 15vh 0;
-    }
-
-    .paragraphAndPicture {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .picture,
-    .pictureMauriceHome {
-        max-width: 90%;
-    }
-
-    p {
-        width: 70vw;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-    }
-
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    ul {
-        display: none;
-    }
-
-
-h1 {
-    font-size: 12pt;
+.burger {
+    display: none;
 }
-}
+
+
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .titleAndParagraphAndPicture {
         display: flex;
@@ -179,15 +138,105 @@ h1 {
         margin-bottom: 10vh;
     }
 
-    .logo {
-        width: 90px;
-        height: 90px;
-    }
-
-    h1 {
-        font-size: 24pt;
-    }
-    ul {
+    .navBarDesktop{
         display: none;
     }
+
+    .navBarMobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: -12vw;
+        margin-right: 2vw;
+        align-items: flex-end;
+        
+     
+       
+    }
+   .navBarMobile i {
+    font-size: 10vw;
+    background-color: #9BD0E7;
+    padding: 2vw;
+    
+   }
+
+   .navListMobile{
+        display: none;
+        
+   }
+  .listVisible{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        font-size: 5vw;
+        background-color: #9BD0E7;
+        
+  }
+ 
 }
+@media screen and (max-width: 576px) {
+    .titleAndParagraphAndPicture {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 15vh 0;
+    }
+
+    .pictureAndTitleAndParagraph {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        margin: 15vh 0;
+    }
+
+    .paragraphAndPicture {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .picture,
+    .pictureMauriceHome {
+        max-width: 90%;
+    }
+
+    p {
+        width: 70vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .navBarDesktop{
+        display: none;
+    }
+    .navBarMobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: -12vw;
+        margin-right: 2vw;
+        align-items: flex-end;
+        
+     
+       
+    }
+   .navBarMobile i {
+    font-size: 10vw;
+    background-color: #9BD0E7;
+    padding: 2vw;
+    
+   }
+
+   .navListMobile{
+        display: none;
+   }
+  .listVisible{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        font-size: 5vw;
+        background-color: #9BD0E7;
+  }
+}
+
+/* @media screen and (max-width: 310px) { */
