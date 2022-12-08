@@ -48,17 +48,19 @@ header {
 }
 
  a:hover { 
-     color: white; 
+     color: white;
+     text-decoration: underline white;
+     transition: 0.4s; 
  } 
 
 h2 {
      font-size: 4vw; /*xx-large; */
-    margin-bottom: 10vh;
+    margin-bottom: 10vw;
     margin-left: 10vw;
 }
 
 h3 {
-    font-size: xx-large;
+    font-size: 3vw;
     margin-bottom: 5%;
 }
 
@@ -84,6 +86,7 @@ p {
     display: flex;
     justify-content: space-around;
     margin: 15vh 0;
+    margin-right: 2vw;
 }
 
 .titleAndParagraph {
@@ -98,33 +101,31 @@ p {
     justify-content: space-around;
     flex-direction: row-reverse;
     margin: 15vh 0;
+    margin-left: 2vw;
+}
+   .imgSmall { 
+    object-fit: contain;
+    width: 100%;
 }
 
-.burger {
-    display: none;
-}
 
-
-
-@media screen and (min-width: 576px) and (max-width: 992px) {
+ @media screen and (min-width: 576px) and (max-width: 1161px) {  /*992px */
     .titleAndParagraphAndPicture {
         display: flex;
         flex-direction: column;
-        margin: 15vh 10vw;
+        margin: 10vw 10vw;
     }
 
     .pictureAndTitleAndParagraph {
         display: flex;
-        flex-direction: column-reverse;
-        margin: 15vh 0;
-
+        flex-direction: column;
+        margin: 10vw 10vw;
     }
 
     .paragraphAndPicture {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .picture,
@@ -134,8 +135,8 @@ p {
 
     p {
         width: 50vw;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
     }
 
     .navBarDesktop{
@@ -148,20 +149,15 @@ p {
         margin-top: -12vw;
         margin-right: 2vw;
         align-items: flex-end;
-        
-     
-       
     }
    .navBarMobile i {
     font-size: 10vw;
     background-color: #9BD0E7;
     padding: 2vw;
-    
    }
 
    .navListMobile{
-        display: none;
-        
+        display: none;     
    }
   .listVisible{
         display: flex;
@@ -169,8 +165,7 @@ p {
         align-items: center;
         top: 0;
         font-size: 5vw;
-        background-color: #9BD0E7;
-        
+        background-color: #9BD0E7;    
   }
  
 }
@@ -178,15 +173,14 @@ p {
     .titleAndParagraphAndPicture {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin: 15vh 0;
+        margin: 10vw 10vw;
     }
 
     .pictureAndTitleAndParagraph {
         display: flex;
-        justify-content: space-around;
-        flex-direction: column-reverse;
-        margin: 15vh 0;
+        flex-direction: column;
+        margin: 10vw 10vw;
+
     }
 
     .paragraphAndPicture {
@@ -203,8 +197,8 @@ p {
 
     p {
         width: 70vw;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
     }
     .navBarDesktop{
         display: none;
@@ -215,15 +209,11 @@ p {
         margin-top: -12vw;
         margin-right: 2vw;
         align-items: flex-end;
-        
-     
-       
     }
    .navBarMobile i {
     font-size: 10vw;
     background-color: #9BD0E7;
     padding: 2vw;
-    
    }
 
    .navListMobile{
