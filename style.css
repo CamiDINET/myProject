@@ -107,6 +107,9 @@ p {
   object-fit: contain;
   width: 100%;
 }
+footer{
+  height: 2vw;
+}
 
 @media screen and (min-width: 576px) and (max-width: 1161px) {
   /*992px */
@@ -166,7 +169,8 @@ p {
     top: 0;
     font-size: 5vw;
     background-color: #9bd0e7;
-    transition: 3s;
+    transition: 1s;
+    z-index: 999;
   }
 }
 @media screen and (max-width: 576px) {
@@ -225,5 +229,7 @@ p {
     top: 0;
     font-size: 5vw;
     background-color: #9bd0e7;
+    transition: 1s;
+    z-index: 999;
   }
 }
