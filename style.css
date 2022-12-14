@@ -157,6 +157,7 @@ footer{
     font-size: 10vw;
     background-color: #9bd0e7;
     padding: 2vw;
+    position: fixed;
   }
 
    .navListMobile { 
@@ -166,11 +167,12 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 0;
+    top: 17vw;
     font-size: 5vw;
     background-color: #9bd0e7;
     transition: 1s;
     z-index: 999;
+    position: fixed;
   }
 }
 @media screen and (max-width: 576px) {
@@ -217,6 +219,7 @@ footer{
     font-size: 10vw;
     background-color: #9bd0e7;
     padding: 2vw;
+    position: fixed;
   }
 
   .navListMobile {
@@ -226,10 +229,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 0;
+    top: 17vw;
     font-size: 5vw;
     background-color: #9bd0e7;
     transition: 1s;
     z-index: 999;
+    position: fixed;
   }
 }
